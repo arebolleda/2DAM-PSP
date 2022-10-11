@@ -1,0 +1,9 @@
+## Solución problema Productor-Consumidor con Named Pipes
+### Solución Junior ficheros: 
+  -junior_consumidor.c 
+  -junior_prodletra.c
+  -junior_prodnumero.c
+### Solución Profesor ficheros: 
+  -p_consumer1.c 
+  -p_producer1.c 
+  -p_producer2.c
