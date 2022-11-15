@@ -11,6 +11,11 @@ public class HiloJoin1R implements Runnable {
         this.operacion=operacion;
     }
 
+    public int getValor()
+    {
+        return this.numero;
+    }
+
     public int incrementar (int numveces)
     {
         for (int i=1; i<=numveces;i++)
@@ -28,11 +33,12 @@ public class HiloJoin1R implements Runnable {
     //método run -> funcionalidad del hilo
 	public void run() {
 		
-        int resultado=0;
+       
 
-        if (operacion=="+") resultado=incrementar(numveces);
-        else if (operacion=="-") resultado=decrementar(numveces);
+        if (operacion=="+") incrementar(numveces);
+        else if (operacion=="-") decrementar(numveces);
         
-        System.out.println(" Numero = "+ resultado);
+        System.out.println(" Numero = "+ getValor());
 	}
 }
+
